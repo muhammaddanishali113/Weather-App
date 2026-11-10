@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="weather-container">
+
+        <div class="weather-card">
+
+            <form class="search-box" id="searchForm">
+                <input type="text" id="cityInput"
+                    placeholder="Search City" value="Karachi"
+                    autocomplete="off">
+                <button type="submit">⌕</button>
+            </form>
+
+            <p id="message"></p>
+
+            <div class="location-row">
+                <h3>📍 <span id="city">Karachi</span></h3>
+                <span id="date">Today</span>
+            </div>
+
+            <div class="current-weather">
+
+                <div class="weather-icon" id="weatherIcon">🌤️</div>
+
+                <div class="temperature">
+                    <h1 id="temperature">--°C</h1>
+                    <p id="condition">Loading...</p>
+                </div>
+
+            </div>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span class="detail-icon">💧</span>
+                    <div>
+                        <small>Humidity</small>
+                        <h3 id="humidity">--%</h3>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <span class="detail-icon">🌬️</span>
+                    <div>
+                        <small>Wind Speed</small>
+                        <h3 id="wind">-- km/h</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="forecast-heading">4 Days Forecast</h3>
+
+            <div class="forecast" id="forecast">
+
+                <div class="forecast-item">Loading...</div>
+
+            </div>
+
+        </div>
+
+        <div class="side-content">
+            <h1>WEATHER<br>APP</h1>
+           
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
